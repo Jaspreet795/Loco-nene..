@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loco Nene - Dulces y Diversión</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg,#ff4c96,#ff85b0);
+  color: white;
+  text-align: center;
+  padding: 50px 15px;
+}
+header img {
+  max-width: 180px;
+  margin-bottom: 15px;
+}
+header h1 { font-size: 2.6em; }
+header p { font-size: 1.2em; }
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: white;
+  padding: 14px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #ff4c96;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 12px;
+}
+nav a:hover {
+  background: #ff4c96;
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2.1em;
+  color: #ff4c96;
+}
+
+/* About */
+#about {
+  background:#fff7fb;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+#about p {
+  text-align:center;
+  font-size:1.15em;
+  line-height:1.8;
+}
+
+/* Menu */
+.menu-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.menu-item {
+  background:#ffe0f0;
+  padding:18px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+.menu-item img {
+  width:100%;
+  border-radius:14px;
+  margin-bottom:12px;
+}
+.menu-item h3 {
+  margin:10px 0 6px;
+  color:#ff4c96;
+}
+
+/* Contact */
+#contact {
+  background:#fff7fb;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+#contact p {
+  text-align:center;
+  font-size:1.1em;
+  margin:10px 0;
+}
+.button {
+  display:inline-block;
+  background:#ff4c96;
+  color:white;
+  padding:14px 22px;
+  margin:6px;
+  border-radius:14px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* Map */
+.map {
+  margin-top: 30px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+/* Footer */
+footer {
+  background:#ff4c96;
+  color:white;
+  text-align:center;
+  padding:30px;
+  margin-top:40px;
+}
+
+@media(max-width:600px){
+  header h1 { font-size:1.9em; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="ps1/nene.jpg" alt="Logo Loco Nene">
+  <h1>Bienvenidos a Loco Nene</h1>
+  <p>Golosinas, pancakes, palomitas y mucha diversión</p>
+</header>
+
+<!-- NAV -->
+<nav>
+  <a href="#about">Sobre Nosotros</a>
+  <a href="#menu">Menú</a>
+  <a href="#contact">Contacto</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>Sobre Nosotros</h2>
+  <p>
+    En Loco Nene hacemos que cada visita sea especial. Ofrecemos golosinas,
+    pancakes, palomitas recién hechas y bebidas en un ambiente lleno de color
+    y alegría en Cassà de la Selva.
+  </p>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <h2>Menú</h2>
+
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="ps1/candys.png" alt="Golosinas">
+      <h3>Golosinas</h3>
+      <p>Gran variedad de dulces de todos los sabores.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="ps1/pancake.png" alt="Pancakes">
+      <h3>Pancakes</h3>
+      <p>Pancakes recién hechos con toppings.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="ps1/Pau.png" alt="Palomitas">
+      <h3>Palomitas</h3>
+      <p>Palomitas dulces o saladas recién hechas.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="ps1/descarga.jpg" alt="Bebidas">
+      <h3>Bebidas</h3>
+      <p>Refrescos y bebidas frías.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <p>📞 658 53 74 20</p>
+  <p>📍 Carrer de l'Esport, 23, Cassà de la Selva</p>
+
+  <p><strong>🕒 Horarios</strong></p>
+  <p>Lunes a Viernes: 16:00 – 20:30 h</p>
+  <p>Sábados y Domingos: 16:30 – 20:30 h</p>
+
+  <p>
+    <a class="button" href="https://wa.me/34658537420">WhatsApp</a>
+    <a class="button" href="https://www.instagram.com/loco.nene">Instagram</a>
+    <a class="button" href="https://www.tiktok.com/@loconenecassa">TikTok</a>
+  </p>
+
+  <!-- Google Map -->
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.52448273121!2d2.906002576146493!3d41.91162077921961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b0e9d5c01f9481%3A0x34d8e3d7f19d9f1e!2sCarrer%20de%20l'Esport%2023%2C%20Cass%C3%A0%20de%20la%20Selva%2C%20Spain!5e0!3m2!1sen!2sus!4v1702145200000!5m2!1sen!2sus"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Loco Nene · Dulces y diversión</p>
+</footer>
+
+</body>
+</html>
